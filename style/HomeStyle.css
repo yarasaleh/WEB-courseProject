@@ -1,0 +1,32 @@
+body{
+    background-color: #F3F4FF;
+}
+nav{
+    display: flex; <!flex makes them next to each ither not one below the other>
+    justify-content: space-around;
+    align-items: center; <!makes then lined centered>
+}
+nav ul{
+    font-family: courier-std, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    display: block;
+    margin-left: 350px; /*space between logo and ul*/
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+.nav-links a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+.nav-links li{
+    list-style: none;
+}
