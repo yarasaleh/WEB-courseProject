@@ -1,42 +1,50 @@
 body{
     background-color: #F3F4FF;
 }
-nav{
-    display: flex; <!flex makes them next to each ither not one below the other>
+.MenuBar{
+    display: flex; /*flex makes them next to each other not one below the other*/
     justify-content: space-around;
-    align-items: center; <!makes then lined centered>
+    align-items: center; /*makes then lined centered*/
 }
-nav ul{
+.nav-links{
     font-family: courier-std, monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 12px;
-    display: block;
     margin-left: 600px; /*space between logo and ul*/
-
-}
-
-.nav-links{
     display: flex;
     justify-content: space-around;
-    width: 45%;
+    width: 50%;
 }
+
 .nav-links a{
     color: #000000;
     text-decoration: none;
     font-size: 14px;
-
 }
 .nav-links li{
     list-style: none;
+}
+.MegaMenuBar{
+    /**
+    * Thanks to Dev Ed for the trick
+    * Source : YouTube video called Responsive Navigation Bar Tutorial | HTML CSS JAVASCRIPT
+    */
+    display: none; /* It's hidden till you make page small */
+}
+.MegaMenuBar div {
+    width: 25px;
+    height: 2px;
+    background-color:#000000;
+    margin: 5px;
 }
 .TypeContainer{
     position: absolute;
     display: flex; /*it is gonna make it horozintal so we used flex-direction */
     flex-direction: column;
     justify-content: center; /*in order to make it works we used height property*/
-    height: 100%;
     padding: 0 40px; /* 0 = bottom and top , 3 = right and left*/
+    margin-top: 400px;
+    white-space: nowrap;
 }
 #TxtBeforeTyper , #TxtAfterTyper{
     font-family: 'PT Mono', monospace;
@@ -50,9 +58,8 @@ nav ul{
     font-weight: lighter;
 }
 .TopView{
-    position: absolute static;
+    position: absolute;
     float: left;
-    height: 100%;
     left: 0;
     margin-top: 15px;
 } /* Source for the solution is : https://stackoverflow.com/questions/13933051/stick-image-to-right-side-of-the-page */
@@ -61,12 +68,24 @@ nav ul{
     border-right: 0.2rem solid #777 ;
 }
 
-@media(min-width:1200px){
+@media screen and (max-width:1300px) {
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        background-color: #F3F4FF; /* TODO: I can see the color because the image is on top !! */
+        top: 11vh;  /*distance between logo and nav links*/
+    }
+}
+@media screen and (min-width:1200px){
     #TxtBeforeTyper{
         font-size: 50px;
     }
+    .nav-links a{
+        font-size: 14px;
+    }
 }
-@media(max-width:800px){
+@media screen and (max-width:800px){
     .TypeContainer{
         padding: 0.1rem;
     }
@@ -74,7 +93,7 @@ nav ul{
         font-size: 30px;
     }
 }
-@media(max-width:500px){
+@media screen and (max-width:500px){
     #TxtBeforeTyper{
         font-size: 20px;
     }
@@ -82,4 +101,5 @@ nav ul{
         font-size: 10px;
     }
 }
+
 /* WORKED ON THE ABOVE : YARA */
