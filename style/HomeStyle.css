@@ -1,5 +1,7 @@
 body{
     background-color: #F3F4FF;
+    padding: 0px;
+    margin: 0px;
 }
 .MenuBar{
     display: flex; /*flex makes them next to each other not one below the other*/
