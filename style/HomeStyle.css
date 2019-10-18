@@ -109,7 +109,7 @@ body{
 .footer {
    position:relative;
    width: 100%;
-   height:200px;
+   height:250px;
    background-color: #BDD3FF;
    margin-top: 2000px;
    margin-bottom: 0;
@@ -118,8 +118,8 @@ body{
 
 
 .fontFooter1{padding:80px 400px 0 100px;}
-.fontFooter2{padding:65px 300px 0  10px;}
-.fontFooter3{padding:70px 500px 0  0;}
+.fontFooter2{padding:65px 200px 0  10px;}     /*padding: top right bottom left*/
+.fontFooter3{padding:70px 0 0  0;}
 
 
 .fontFooter1 , .fontFooter2  , .fontFooter3{
@@ -154,10 +154,11 @@ opacity:0.2;                            <!to reduce imag clarity>
   .fontFooter1 , .fontFooter2  , .fontFooter3  {
         font-size: 23px;}
         .vr{  right:150px;}
-        .footer{   height:200px;}
+        .footer{   height:250px;}
+
         .fontFooter1{padding:80px 400px 0 100px;}
-        .fontFooter2{padding:65px 300px 0  0;}
-        .fontFooter3{padding:70px 500px 0  0;}
+        .fontFooter2{padding:65px 150px 0  10px;}     /*padding: top right bottom left*/
+        .fontFooter3{padding:70px 0 0  0;}
 
 
     input[type="submit"]{  height:32px;
