@@ -103,3 +103,83 @@ body{
 }
 
 /* WORKED ON THE ABOVE : YARA */
+
+
+
+.footer {
+   position:relative;
+   width: 100%;
+   height:200px;
+   background-color: #BDD3FF;
+   margin-top: 2000px;
+   margin-bottom: 0;
+   display:flex;} /*here we put flex to become contents footer next to each other*/
+
+
+
+.fontFooter1{padding:80px 400px 0 100px;}
+.fontFooter2{padding:65px 300px 0  10px;}
+.fontFooter3{padding:70px 500px 0  0;}
+
+
+.fontFooter1 , .fontFooter2  , .fontFooter3{
+    font-size: 15px;
+  color:  #a6a6a6;
+  font-family: courier;
+}
+
+
+ .vr {                                  /*this class to create vertical line */
+  border-left: 1.5px solid #a6a6a6  ;
+  height:85px;
+  position:relative;
+  right:150px;
+  bottom: 20%;
+  margin-left:-3px;
+  top:35%;
+}
+.footer  .socialMedia-footer{
+
+list-style:none;
+   display:flex;
+padding-left:13px;
+
+}
+.footer img{
+padding-right:8px;
+opacity:0.2;                            <!to reduce imag clarity>
+}
+
+@media(max-width:1600px) and (min-width:480px){
+  .fontFooter1 , .fontFooter2  , .fontFooter3  {
+        font-size: 23px;}
+        .vr{  right:150px;}
+        .footer{   height:200px;}
+        .fontFooter1{padding:80px 400px 0 100px;}
+        .fontFooter2{padding:65px 300px 0  0;}
+        .fontFooter3{padding:70px 500px 0  0;}
+
+
+    input[type="submit"]{  height:32px;
+      width:74px;  }
+    input[type="email"]{  width:155px;
+      height:25px;}
+    }
+
+input[type="email"]{
+  border-top-left-radius: 13px;                             /*line 166&167&172&173 to make rounded corners */
+  border-bottom-left-radius:13px;
+  width:155px;
+  height:25px;
+}
+input[type="submit"]{
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  height:32px;
+  width:74px;
+  background:#B50404;
+}
+input[type="submit"]:hover{
+  background-color:#F3F4FF;
+
+}
