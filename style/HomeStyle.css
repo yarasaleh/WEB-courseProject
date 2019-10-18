@@ -1,5 +1,7 @@
 body{
     background-color: #F3F4FF;
+    padding: 0px;
+    margin: 0px;
 }
 .MenuBar{
     display: flex; /*flex makes them next to each other not one below the other*/
@@ -123,9 +125,9 @@ body{
 
 
 .fontFooter1 , .fontFooter2  , .fontFooter3{
-    font-size: 15px;
-  color:  #a6a6a6;
-  font-family: courier;
+    font-size: 13px;
+    color:  #4E4D4D;
+    font-family: courier;
 }
 
 
@@ -147,7 +149,7 @@ padding-left:13px;
 }
 .footer img{
 padding-right:8px;
-opacity:0.2;                            <!to reduce imag clarity>
+opacity:0.2;  /*to reduce img clarity*/
 }
 
 @media(max-width:1600px) and (min-width:480px){
@@ -168,7 +170,7 @@ opacity:0.2;                            <!to reduce imag clarity>
     }
 
 input[type="email"]{
-  border-top-left-radius: 13px;                             /*line 166&167&172&173 to make rounded corners */
+  border-top-left-radius: 13px;    /*line 166&167&172&173 to make rounded corners */
   border-bottom-left-radius:13px;
   width:155px;
   height:25px;
@@ -182,5 +184,5 @@ input[type="submit"]{
 }
 input[type="submit"]:hover{
   background-color:#F3F4FF;
-
 }
+/* WORKED ON THE ABOVE : RAGHAD */
