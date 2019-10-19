@@ -2,6 +2,17 @@ body{
     background-color: #F3F4FF;
     padding: 0px;
     margin: 0px;
+    scroll-snap-type : y mandatory;
+    overflow-y: scroll;
+}
+.ScrollAnimationSecton1{
+    scroll-snap-align : start;
+}
+.ScrollAnimationSecton2{
+    scroll-snap-align : start;
+}
+.ScrollAnimationSecton3{
+    scroll-snap-align : start;
 }
 .MenuBar{
     display: flex; /*flex makes them next to each other not one below the other*/
@@ -69,13 +80,67 @@ body{
 .txt-type > .txt {
     border-right: 0.2rem solid #777 ;
 }
+.TheLastestProjects{
+    margin-top: 900px;
+}
+#TheRightSide{
+    float:right;
+    margin-top: 200px;
+}
+#TheRightSide p{
+    font-family: courier-std, monospace;
+    font-style: normal;
+    font-size: 25px;
+    margin-left: 210px;
+    margin-bottom: 5px;
+}
+#TheRightSide hr{
+    border-color: black;
+    border-width: 1px;
+    margin-top: 1px;
+}
+.TheLeftSide{
+    position: relative;
+    margin-top: 100px;
+    background-color: #BDD3FF;
+    float: left;
+    width: 70%;
+}
+.TheLeftSide img{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    opacity:0.6;
+    filter:alpha(opacity=40);
+}
+.TheLeftSide img:hover{
+    opacity:1.0;
+    filter:alpha(opacity=100);
+    transition: 0.5s;
+}
+.TheLeftSide p{
+    font-size: 15px;
+    margin-top: 0px;
+}
+.TheTxt{
+    display: flex;
+}
+#txt1{
+    margin-left: 50px;
+}
+#txt2{
+    margin-left: 180px;
+}
+#txt3{
+    margin-left: 233px;
+}
 
 @media screen and (max-width:1300px) {
     .nav-links{
         position: absolute;
         right: 0px;
         height: 92vh;
-        background-color: #F3F4FF; /* TODO: I can see the color because the image is on top !! */
+        background-color: #F3F4FF; /* TODO: I cannot see the color because the image is on top !! */
         top: 11vh;  /*distance between logo and nav links*/
     }
 }
@@ -111,9 +176,9 @@ body{
 .footer {
    position:relative;
    width: 100%;
-   height:250px;
+   height:230px;
    background-color: #BDD3FF;
-   margin-top: 2000px;
+   margin-top: 1900px;
    margin-bottom: 0;
    display:flex;} /*here we put flex to become contents footer next to each other*/
 
