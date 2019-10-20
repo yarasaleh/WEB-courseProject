@@ -81,11 +81,16 @@ body{
     border-right: 0.2rem solid #777 ;
 }
 .TheLastestProjects{
+    position: relative;
+    display: flex;
     margin-top: 900px;
+    width: 100%;
 }
 #TheRightSide{
     float:right;
-    margin-top: 200px;
+    width: 40%;
+    margin-top: 320px;
+    padding-right: 0px;
 }
 #TheRightSide p{
     font-family: courier-std, monospace;
@@ -93,6 +98,7 @@ body{
     font-size: 25px;
     margin-left: 210px;
     margin-bottom: 5px;
+    margin-right: 0px;
 }
 #TheRightSide hr{
     border-color: black;
@@ -104,9 +110,12 @@ body{
     margin-top: 100px;
     background-color: #BDD3FF;
     float: left;
-    width: 70%;
+    width: 60%;
+    width:1005px;
+    height: 490px;
 }
 .TheLeftSide img{
+    /*TODO : make the pictures not go down when rezise the browser*/
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
@@ -122,17 +131,17 @@ body{
     font-size: 15px;
     margin-top: 0px;
 }
-.TheTxt{
+.TheTitleOfLatestProjects{
     display: flex;
 }
 #txt1{
     margin-left: 50px;
 }
 #txt2{
-    margin-left: 180px;
+    margin-left: 120px;
 }
 #txt3{
-    margin-left: 233px;
+    margin-left: 155px;
 }
 
 @media screen and (max-width:1300px) {
