@@ -5,15 +5,6 @@ body{
     scroll-snap-type : y mandatory;
     overflow-y: scroll;
 }
-.ScrollAnimationSecton1{
-    scroll-snap-align : start;
-}
-.ScrollAnimationSecton2{
-    scroll-snap-align : start;
-}
-.ScrollAnimationSecton3{
-    scroll-snap-align : start;
-}
 .MenuBar{
     display: flex; /*flex makes them next to each other not one below the other*/
     justify-content: space-around;
@@ -49,6 +40,16 @@ body{
     height: 2px;
     background-color:#000000;
     margin: 5px;
+}
+/************************************************** HOME PAGE BEGIN **************************************************/
+.ScrollAnimationSecton1{
+    scroll-snap-align : start;
+}
+.ScrollAnimationSecton2{
+    scroll-snap-align : start;
+}
+.ScrollAnimationSecton3{
+    scroll-snap-align : start;
 }
 .TypeContainer{
     position: absolute;
@@ -143,6 +144,7 @@ body{
 #txt3{
     margin-left: 155px;
 }
+/************************************************** HOME PAGE END **************************************************/
 
 @media screen and (max-width:1300px) {
     .nav-links{
