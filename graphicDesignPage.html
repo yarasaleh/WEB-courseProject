@@ -5,6 +5,8 @@
         <title>Garphic Design</title>
         <link rel="stylesheet" href="style/Style.css">
         <link rel="stylesheet" href="https://use.typekit.net/bgh6qgf.css">
+        <!-- Github Library used to animate on scrolling -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <nav class = "MenuBar">
@@ -37,28 +39,30 @@
         </nav>
 
         <header class  = "graphicDesignPageHeader">
-            <img id = "graphicDesignPageHeaderLogo" src="images/GraphicDesginPage/headerLogo.png" alt="" width="410px" height="160px">
+            <img  src="images/GraphicDesginPage/headerLogo.png" alt="" width="410px" height="160px">
             <div id = "graphicDesignPageHeaderPic">
-                <img src="images/GraphicDesginPage/headerImage.jpg" alt="" width="435px" height="618px">
+                <img  src="images/GraphicDesginPage/headerImage.jpg" alt="" width="435px" height="618px">
                 <a href="http://www.magdiellopez.com/">Poster By Magdiel Lopez</a>
             </div>
         </header>
-        <main class = "graphicDesignPageContainer">
 
-            <section class  = "graphicDesignArticleCard">
+
+        <main class = "graphicDesignPageContainer">
+            <section class  = "graphicDesignArticleCard" data-aos = "fade-left">
+                <!-- from GitHub documentation I wanted to change the value of @data-aos I didn't do this in script cuz the values are diffrent -->
                 <img src="images/GraphicDesginPage/article1.jpg" alt="" width="479px" height="306px">
                 <div id = "graphicDesignArticleTitle">
-                    <a href="#"><h3>Black</h3></a>
+                    <a href="#"><h1>Black</h1></a>
                     <p id = "ArticleDescrip">Very clean unique identity for coffee brand.</p>
                     <p id = "ArticleFields">Creative Fields: <br>
                         Branding - Packaging - Graphic Design</p>
                 </div>
             </section>
 
-            <section class  = "graphicDesignArticleCard">
+            <section class  = "graphicDesignArticleCard" data-aos = "fade-right">
                 <img src="images/GraphicDesginPage/article2.jpg" alt="" width="479px" height="306px">
                 <div id = "graphicDesignArticleTitle">
-                    <a href="#"><h3>Mano Pizza</h3></a>
+                    <a href="#"><h1>Mano Pizza</h1></a>
                     <p id = "ArticleDescrip">Mano Pizza is a small Norwegian pizza <br>
                                             restaurant chain producing Neapolitan pizza <br>
                                             al metro (by the meter). Just like in Italy,<br>
@@ -69,20 +73,20 @@
                 </div>
             </section>
 
-            <section class  = "graphicDesignArticleCard">
+            <section class  = "graphicDesignArticleCard" data-aos = "fade-left">
                 <img src="images/GraphicDesginPage/article3.png" alt="" width="479px" height="306px">
                 <div id = "graphicDesignArticleTitle">
-                    <a href="#"><h3>Datascence Web Design</h3></a>
+                    <a href="#"><h1>Datascence Web Design</h1></a>
                     <p id = "ArticleDescrip">Nice exapmle for modren web design.</p>
                     <p id = "ArticleFields">Creative Fields: <br>
                         web Design</p>
                 </div>
             </section>
 
-            <section class  = "graphicDesignArticleCard">
+            <section class  = "graphicDesignArticleCard" data-aos = "fade-right">
                 <img src="images/GraphicDesginPage/article4.png" alt="" width="479px" height="306px">
                 <div id = "graphicDesignArticleTitle">
-                    <a href="#"><h3>Astro - Web|App</h3></a>
+                    <a href="#"><h1>Astro - Web|App</h1></a>
                     <p id = "ArticleDescrip">Astro is informative and entertaining astrological <br>
                         portal with daily updated content.</p>
                     <p id = "ArticleFields">Creative Fields: <br>
@@ -90,19 +94,20 @@
                 </div>
             </section>
 
-            <section class  = "graphicDesignArticleCard">
+            <section class  = "graphicDesignArticleCard" data-aos = "fade-left">
                 <img src="images/GraphicDesginPage/article5.jpg" alt="" width="479px" height="306px">
                 <div id = "graphicDesignArticleTitle">
-                    <a href="#"><h3>KUU SPACE <br>·发射好奇与无畏的信号.召集同频的我们</h3></a>
+                    <a href="#"><h1>KUU SPACE<br>·发射好奇与无畏的信号.召集同频的我们</h1></a>
                     <p id = "ArticleDescrip">A coffee shop design</p>
                     <p id = "ArticleFields">Creative Fields: <br>
                         Graphic Design - Branding</p>
                 </div>
             </section>
-
         </main>
-
-
+        <!-- The script from the actual js file -->
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <!-- Where I Initialized AOS -->
+         <script src="main.js"></script>
 
 
 

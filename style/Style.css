@@ -28,7 +28,7 @@ body{
 .nav-links li{
     list-style: none;
 }
-/************************************************** HOME PAGE BEGIN **************************************************/
+/*_______________________________________ HOME PAGE BEGIN _______________________________________*/
 .ScrollAnimationSecton1{
     scroll-snap-align : start;
 }
@@ -76,6 +76,7 @@ body{
     position: relative; /*So the scroll works right*/
     margin-top: 900px;
     width: 100%;
+    /* TODO: try using overflow to make this div below typeeffect section */
 }
 .TheRightSide{
     float:right;
@@ -170,20 +171,77 @@ body{
         font-size: 10px;
     }
 }
-/************************************************** HOME PAGE END **************************************************/
-/************************************************** GRAPHIC DESIGN PAGE BEGIN **************************************/
+/*_______________________________________ HOME PAGE END _______________________________________*/
+/*_______________________________________ GRAPHIC DESIGN PAGE BEGIN _______________________________________*/
+/* Thanks To Traversy Media YouTube vid called (Animate On Scroll Webpage | AOS Library) which helped me design this page*/
 .graphicDesignPageHeader{
     display: flex;
+    height: 850px;
+    align-items: center; /* y axis */
+    justify-content: center; /* x axis */
+}
+.graphicDesignPageHeader img{
+    padding: 0 100px;
+}
+
+/* TO CHANGE THE a ELEMENT TO LOOK LIKE NORMAL TXT NOT LINK*/
+.graphicDesignPageHeader a{
+    color: #4E4D4D;
+    text-decoration: none;
+    font-size: 9px;
+    padding-left: 100px;
 }
 #graphicDesignPageHeaderPic{
     display: flex;
     flex-direction: column;
 }
-/************************************************** GRAPHIC DESIGN PAGE END ****************************************/
+.graphicDesignPageContainer a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bolder;
+}
+.graphicDesignPageContainer{
+    max-width: 1100px; /* To make it responsive*/
+    margin: auto; /* To push it to the center*/
+    overflow: auto; /* it adds scrollbars only when necessary*/
+    padding: 0 30px; /* bottom & top = 0  right & left = 30*/
+}
+.graphicDesignArticleCard h1{
+    line-height: 1.2; /* When title in two lines the distance is not so far */
+    margin-top: 90px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+#ArticleFields {
+    color: #4E4D4D;
+    font-size: 13px;
+    margin-top: 60px;
+}
+#ArticleDescrip{
+    font-size: 13px;
+    margin: 0px;
+}
+
+.graphicDesignArticleCard{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* two columns 1fr means one part of the avaliable space*/
+    grid-gap: 10px;
+    background: #D6DAEB;
+    margin-bottom: 60px; /* Distance between cards*/
+}
+.graphicDesignArticleCard img{
+    padding: 50px;
+}
+.graphicDesignArticleCard > div{
+    /* To change the div below this class */
+    padding: 25px; /* To center the text inside the card */
+}
+
+/*_______________________________________ GRAPHIC DESIGN PAGE END _______________________________________*/
 /* WORKED ON THE ABOVE : YARA */
 
 
-/************************************************** FOOTER BEGIN **************************************************/
+/*_______________________________________ FOOTER BEGIN _______________________________________*/
 .footer {
    position:relative;
    width: 100%;
