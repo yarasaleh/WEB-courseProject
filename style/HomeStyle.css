@@ -4,6 +4,8 @@ body{
     margin: 0px;
     scroll-snap-type : y mandatory;
     overflow-y: scroll;
+    font-family: courier-std, monospace;
+    font-style: normal;
 }
 .MenuBar{
     display: flex; /*flex makes them next to each other not one below the other*/
@@ -11,9 +13,7 @@ body{
     align-items: center; /*makes then lined centered*/
 }
 .nav-links{
-    font-family: courier-std, monospace;
     font-weight: 400;
-    font-style: normal;
     margin-left: 600px; /*space between logo and ul*/
     display: flex;
     justify-content: space-around;
@@ -28,19 +28,6 @@ body{
 .nav-links li{
     list-style: none;
 }
-.MegaMenuBar{
-    /**
-    * Thanks to Dev Ed for the trick
-    * Source : YouTube video called Responsive Navigation Bar Tutorial | HTML CSS JAVASCRIPT
-    */
-    display: none; /* It's hidden till you make page small */
-}
-.MegaMenuBar div {
-    width: 25px;
-    height: 2px;
-    background-color:#000000;
-    margin: 5px;
-}
 /************************************************** HOME PAGE BEGIN **************************************************/
 .ScrollAnimationSecton1{
     scroll-snap-align : start;
@@ -49,7 +36,11 @@ body{
     scroll-snap-align : start;
 }
 .ScrollAnimationSecton3{
-    scroll-snap-align : start;
+    scroll-snap-align : end;
+}
+.HomePage{
+    display: flex;
+    flex-direction: column;
 }
 .TypeContainer{
     position: absolute;
@@ -61,7 +52,7 @@ body{
     white-space: nowrap;
 }
 #TxtBeforeTyper , #TxtAfterTyper{
-    font-family: 'PT Mono', monospace;
+    font-family: 'PT Mono', monospace !important; /* So the page font doesn't apply*/
     margin: 6px;
 }
 #TxtBeforeTyper{
@@ -82,25 +73,26 @@ body{
     border-right: 0.2rem solid #777 ;
 }
 .TheLastestProjects{
-    position: relative;
+    position: relative; /*So the scroll works right*/
     margin-top: 900px;
     width: 100%;
 }
-#TheRightSide{
+.TheRightSide{
     float:right;
-    width: 40%;
     margin-top: 320px;
     padding-right: 0px;
+    padding-left: 0px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
-#TheRightSide p{
-    font-family: courier-std, monospace;
-    font-style: normal;
+.TheRightSide p{
     font-size: 25px;
     margin-left: 210px;
     margin-bottom: 5px;
     margin-right: 0px;
 }
-#TheRightSide hr{
+.TheRightSide hr{
     border-color: black;
     border-width: 1px;
     margin-top: 1px;
@@ -129,6 +121,7 @@ body{
 }
 .TheLeftSide p{
     font-size: 15px;
+    font-weight: 900;
     margin-top: 0px;
 }
 .TheTitleOfLatestProjects{
@@ -181,7 +174,6 @@ body{
 /************************************************** GRAPHIC DESIGN PAGE BEGIN **************************************/
 .graphicDesignPageHeader{
     display: flex;
-
 }
 #graphicDesignPageHeaderPic{
     display: flex;
