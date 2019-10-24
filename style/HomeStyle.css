@@ -128,6 +128,8 @@ body{
     font-size: 13px;
     color:  #4E4D4D;
     font-family: courier;
+    width: 50%;
+
 }
 
 
@@ -139,11 +141,12 @@ body{
   bottom: 20%;
   margin-left:-3px;
   top:35%;
+  width:40%;
 }
 .footer  .socialMedia-footer{
 
 list-style:none;
-   display:flex;
+   display:flex;                /* to become contents footer next to each other*/
 padding-left:13px;
 
 }
@@ -175,7 +178,7 @@ input[type="email"]{
   width:155px;
   height:25px;
 }
-input[type="submit"]{
+input[type="submit"]{                    
   border-top-right-radius: 13px;
   border-bottom-right-radius: 13px;
   height:32px;
