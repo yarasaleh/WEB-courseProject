@@ -2,7 +2,7 @@ body{
     background-color: #F3F4FF;
     padding: 0px;
     margin: 0px;
-    scroll-snap-type : y mandatory;
+    scroll-snap-type : y proximity;  // I didn't use mandatory cuz It caused the user to be able to scroll beyond the footer!!
     overflow-y: scroll;
     font-family: courier-std, monospace;
     font-style: normal;
@@ -184,7 +184,7 @@ body{
     padding: 0 100px;
 }
 
-/* TO CHANGE THE a ELEMENT TO LOOK LIKE NORMAL TXT NOT LINK*/
+/* TO CHANGE THE <a> ELEMENT TO LOOK LIKE NORMAL TXT NOT LINK*/
 .graphicDesignPageHeader a{
     color: #4E4D4D;
     text-decoration: none;

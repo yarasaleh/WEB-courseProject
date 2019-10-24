@@ -92,7 +92,12 @@ function init(){
 }
 
 
+
+
 // Where I Initialized AOS  FOR GRAPHIC DESIGN PAGE -- Scrolling Animation --
 // I did change the default value of duration to take longer to appear and I did it here cuz all cards gonna have the same value
 AOS.init({ duration: 1000});
+
+
+
 // WORKED ON THE ABOVE : YARA
