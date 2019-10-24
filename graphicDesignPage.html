@@ -3,17 +3,18 @@
     <head>
         <meta charset="utf-8">
         <title>Garphic Design</title>
-        <link rel="stylesheet" href="style/HomeStyle.css">
+        <link rel="stylesheet" href="style/Style.css">
         <link rel="stylesheet" href="https://use.typekit.net/bgh6qgf.css">
+        <!-- Github Library used to animate on scrolling -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
-        <nav>
+        <nav class = "MenuBar">
             <div class="logo">
                 <!--when hover on logo it says Home and takes you to home page-->
                 <a href="home.html">
                     <img href="#" id="logoImage" src="images/logo.png" alt="Home" height="61" width="174">
                 </a>
-
             </div>
             <ul class="nav-links">
                 <li>
@@ -36,12 +37,84 @@
                 </li>
             </ul>
         </nav>
+
+        <header class  = "graphicDesignPageHeader">
+            <img  src="images/GraphicDesginPage/headerLogo.png" alt="" width="410px" height="160px">
+            <div id = "graphicDesignPageHeaderPic">
+                <img  src="images/GraphicDesginPage/headerImage.jpg" alt="" width="435px" height="618px">
+                <a href="http://www.magdiellopez.com/">Poster By Magdiel Lopez</a>
+            </div>
+        </header>
+
+
+        <main class = "graphicDesignPageContainer">
+            <section class  = "graphicDesignArticleCard" data-aos = "fade-left">
+                <!-- from GitHub documentation I wanted to change the value of @data-aos I didn't do this in script cuz the values are diffrent -->
+                <img src="images/GraphicDesginPage/article1.jpg" alt="" width="479px" height="306px">
+                <div id = "graphicDesignArticleTitle">
+                    <a href="#"><h1>Black</h1></a>
+                    <p id = "ArticleDescrip">Very clean unique identity for coffee brand.</p>
+                    <p id = "ArticleFields">Creative Fields: <br>
+                        Branding - Packaging - Graphic Design</p>
+                </div>
+            </section>
+
+            <section class  = "graphicDesignArticleCard" data-aos = "fade-right">
+                <img src="images/GraphicDesginPage/article2.jpg" alt="" width="479px" height="306px">
+                <div id = "graphicDesignArticleTitle">
+                    <a href="#"><h1>Mano Pizza</h1></a>
+                    <p id = "ArticleDescrip">Mano Pizza is a small Norwegian pizza <br>
+                                            restaurant chain producing Neapolitan pizza <br>
+                                            al metro (by the meter). Just like in Italy,<br>
+                                            the dough is hand stretched and <br>
+                                            grilled in a gas oven.</p>
+                    <p id = "ArticleFields">Creative Fields: <br>
+                        Graphic Design - Branding - Packaging </p>
+                </div>
+            </section>
+
+            <section class  = "graphicDesignArticleCard" data-aos = "fade-left">
+                <img src="images/GraphicDesginPage/article3.png" alt="" width="479px" height="306px">
+                <div id = "graphicDesignArticleTitle">
+                    <a href="#"><h1>Datascence Web Design</h1></a>
+                    <p id = "ArticleDescrip">Nice exapmle for modren web design.</p>
+                    <p id = "ArticleFields">Creative Fields: <br>
+                        web Design</p>
+                </div>
+            </section>
+
+            <section class  = "graphicDesignArticleCard" data-aos = "fade-right">
+                <img src="images/GraphicDesginPage/article4.png" alt="" width="479px" height="306px">
+                <div id = "graphicDesignArticleTitle">
+                    <a href="#"><h1>Astro - Web|App</h1></a>
+                    <p id = "ArticleDescrip">Astro is informative and entertaining astrological <br>
+                        portal with daily updated content.</p>
+                    <p id = "ArticleFields">Creative Fields: <br>
+                        Graphic Design - UI/UX - Web Design</p>
+                </div>
+            </section>
+
+            <section class  = "graphicDesignArticleCard" data-aos = "fade-left">
+                <img src="images/GraphicDesginPage/article5.jpg" alt="" width="479px" height="306px">
+                <div id = "graphicDesignArticleTitle">
+                    <a href="#"><h1>KUU SPACE<br>·发射好奇与无畏的信号.召集同频的我们</h1></a>
+                    <p id = "ArticleDescrip">A coffee shop design</p>
+                    <p id = "ArticleFields">Creative Fields: <br>
+                        Graphic Design - Branding</p>
+                </div>
+            </section>
+        </main>
+        <!-- The script from the actual js file -->
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <!-- Where I Initialized AOS -->
+         <script src="main.js"></script>
+
+
+
+
         <nav class="footer">
-
         <div class="fontFooter1">&copy;	2020<br>All Rights Reserved</div>
-
         <div class="vr"></div>
-
         <div class="fontFooter2">FAQ<br>Privacy & policy<br>Terms & Conditions<br>
           <ul class="socialMedia-footer">
         <li><a href="twitter.com"><img src="https://www.stickpng.com/assets/images/5a2fe479cc45e43754640849.png" alt="twitter icon" height="22spx" width="22px"></a></li>
