@@ -319,4 +319,138 @@ input[type="submit"]{
 input[type="submit"]:hover{
   background-color:#F3F4FF;
 }
+/*_______________________________________ FOOTER END _______________________________________*/
+
+/*_______________________________________ CONTACT PAGE BEGIN _______________________________________*/
+
+
+ .contactPage-leftSide-{
+background-color:#D6DAEB;
+width:60%;
+height:1000px;
+margin-top:10%;
+display:block;
+
+ }
+ #text1-leftSide-{
+   padding-top: 5%;
+   padding-left: 27%;
+   font-family:sans-serif;
+   font-weight:900;
+   font-size: 42px;
+ }
+
+ .formCP{
+left: 30%;
+width:5%;
+position:relative;
+height:50%;
+
+}
+
+  .formCP .input1 , .input2{
+    width:400px;
+    height:35px;
+    color:black;
+    font-size:25px;
+     padding-top:20px;
+    border:none;
+    background: #D6DAEB;
+    outline: none;               /* here we use outline to delete a line that is drow around the element */
+    color: #3e4042;
+   }
+
+  .formCP  #label-input1-{
+     position: absolute;
+      bottom:444px;
+    }
+   .formCP #label-input2-{
+    position:absolute;
+      bottom:285px;
+      }
+    #label-input1- , #label-input2-{
+      left:0%;
+      width:400px;
+      height: 80px;
+       pointer-events: none;    /*again also,points-events here helps to i can write over name*/
+      border-bottom: 3px solid #30333b;
+        }
+
+    /*in line 35-44 and line 55-60 "i do the line of input from --> source:https://www.youtube.com/watch?v=IxRJ8vplzAo"*/
+
+    #label-input1- , #label-input2- , #label-input3-{
+   font-family:inherit !important;
+   font-size:29px;
+   color:#878c96;
+}
+
+   #message-leftSide-{
+   border-top-left-radius: 50px;
+   border-top-right-radius: 50px;
+   border-bottom-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+   height:200px;
+   width:600px;
+   border:none;                         /* to Hide limits of text box*/
+outline: none;           /* here we use outline to delete a line that is drow around the element */
+ font-size: 23px;
+ color: #3e4042;
+ padding-left: 5px;
+ padding-right: 5px;
+ resize:none;    /* use resize to can't change size of the text box*/
+
+}
+#submitCP{
+  width:130px;
+  height: 47px;
+  border-color: #656a75;
+  opacity: 0.5;
+  border-width: 2.5px;
+  background: #D6DAEB;
+  border-radius: 50px;
+  font-size: 24px;
+  font-family:inherit;
+  outline: none;}     /* here we use outline to delete a line that is drow around the element */
+
+
+
+
+ .contactPage-rightSide-{
+         background-color:#7C1111;
+         width:40%;
+         height:1000px;
+         margin-top:10%;
+          position:relative;}
+  /* margin-top:10%;*/
+
+       .contactPage{
+      display: flex;
+       }
+       #text1-rightSide-{
+         padding-left:33%;
+         padding-top: 8%;
+         font-size: 48px;
+         font-family:Courier !important;
+         color: white;
+         font-weight: 600;
+         font-style: italic;
+       }
+       #text2-rightSide-{
+         color:white;
+         font-size: 31px;
+         padding-left: 35%;
+         font-family: Courier !important;
+       }
+       .icons-rightSide-{
+         padding-left: 35%;
+       }
+
+       #socalmedia-icons{
+       height: 5%;
+       width:5%;
+
+       }
+/*_______________________________________ CONTACT PAGE END _______________________________________*/
+
+
 /* WORKED ON THE ABOVE : RAGHAD */
