@@ -2,7 +2,7 @@ body{
     background-color: #F3F4FF;
     padding: 0px;
     margin: 0px;
-    scroll-snap-type : y proximity;  // I didn't use mandatory cuz It caused the user to be able to scroll beyond the footer!!
+    scroll-snap-type : y proximity;  /* I didn't use mandatory cuz It caused the user to be able to scroll beyond the footer!!*/
     overflow-y: scroll;
     font-family: courier-std, monospace;
     font-style: normal;
@@ -238,6 +238,45 @@ body{
 }
 
 /*_______________________________________ GRAPHIC DESIGN PAGE END _______________________________________*/
+/*_______________________________________ DEVELOPMENT PAGE BEGIN _______________________________________*/
+.developmentPageHeader{
+    height: 860px;
+}
+#DevFrontLogo{
+    position: absolute;
+    top: 390px;
+    left: 690px;
+    transition: 1s;
+}
+#DevFrontLogo:hover{
+    top: 350px;
+    transition: 1s;
+}
+
+#DevBackLogo{
+    position: relative;
+    top:190px;
+    left: 650px;
+}
+.developmentPageHeader > p{
+    position: relative;
+    top:290px;
+    font-size: 15px;
+    text-align: center;
+}
+.developmentPageContainer{
+    background-color: #DFE8FF;
+    height: 940px;
+}
+#TheLineInDevProjects{
+    position: relative;
+    top: 300px;
+    border-color: #707070;
+    border-width: 0.5px;
+
+}
+
+/*_______________________________________ DEVELOPMENT PAGE END _______________________________________*/
 /* WORKED ON THE ABOVE : YARA */
 
 
