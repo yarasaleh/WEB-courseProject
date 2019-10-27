@@ -267,6 +267,7 @@ body{
 .developmentPageContainer{
     background-color: #DFE8FF;
     height: 940px;
+
 }
 #TheLineInDevProjects{
     position: relative;
@@ -274,6 +275,21 @@ body{
     border-color: #707070;
     border-width: 0.5px;
 
+}
+.developmentPageNavTopics{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#DevTopic{
+    height: 300px;
+    width: 300px;
+}
+#DevPageCircleInTopics{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: #7C1111;
+    border-radius: 100%;
 }
 
 /*_______________________________________ DEVELOPMENT PAGE END _______________________________________*/
