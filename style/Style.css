@@ -265,42 +265,67 @@ body{
     text-align: center;
 }
 .developmentPageContainer{
-    background-color: #DFE8FF;
+    /*The background gradient is by https://uigradients.com/#MoonPurple*/
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+
+
     height: 940px;
     width: 100%;
 
 }
 #TheLineInDevProjects{
     position: relative;
-    top: 300px;
+    top: 350px;
     border-color: #707070;
     border-width: 0.5px;
 
 }
 #DevTopic{
-    height: 350px;
-    width: 300px;
-    padding: 1.5rem;
+    min-height: 400px;
+    padding: 1.3rem;
     border-radius: 16px;
-    background: white;
-    box-shadow: -1rem 0 3rem #000 ;
+    background: transparent;
+    /*box-shadow: -1rem 0 3rem #000 ; USE THIS IN DARK MODE*/
     display: flex;
     flex-direction: column;
-    transition: 0.2s;
-    margin: 0;
+    transition: 0.5s;
+    margin-left: 50px;
+    margin-right: 50px;
 
 }
 #DevPageCircleInTopics{
     position: relative;
-    width: 25px;
-    height: 25px;
+    width: 17px;
+    height: 17px;
     background-color: #7C1111;
     border-radius: 100%;
 }
-.developmentPageNavTopics{
-    padding: 3rem;
+#author{
+    margin-top: 0;
+}
+#DevTopic  h2{
+    margin-bottom: 4px;
+}
+#DevTopic a{
+    text-decoration: none;
+    color: inherit;
+}
+.developmentPageTopics{
+    padding: 310px 200px;
     display: flex;
+    overflow-y: hidden;
     overflow-x: scroll;
+    white-space: nowrap;
+}
+.developmentPageContainer h1{
+    position: absolute;
+    color: #000;
+    font-size: 50px;
+    padding: 100px 190px;
+
+
 }
 
 /*_______________________________________ DEVELOPMENT PAGE END _______________________________________*/
