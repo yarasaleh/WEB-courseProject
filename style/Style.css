@@ -237,6 +237,7 @@ body{
     padding: 25px; /* To center the text inside the card */
 }
 
+
 /*_______________________________________ GRAPHIC DESIGN PAGE END _______________________________________*/
 /*_______________________________________ DEVELOPMENT PAGE BEGIN _______________________________________*/
 .developmentPageHeader{
@@ -245,7 +246,7 @@ body{
 #DevFrontLogo{
     position: absolute;
     top: 390px;
-    left: 690px;
+    left: 720px;
     transition: 1s;
 }
 #DevFrontLogo:hover{
@@ -264,17 +265,32 @@ body{
     font-size: 15px;
     text-align: center;
 }
+.switch{
+    position: sticky; /* TODO: NOT WORKING !!!!!!!!! */
+    height: 40px;
+    width: 125px;
+    position: absolute;
+    background-color: #BDD3FF;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+
+}
+.inner-switch{
+    display: inline-block;
+    cursor: pointer;
+    padding: 12px;
+
+}
 .developmentPageContainer{
     /*The background gradient is by https://uigradients.com/#MoonPurple*/
     background: #4e54c8;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
     background: linear-gradient(to right, #8f94fb, #4e54c8);
-
-
     height: 940px;
     width: 100%;
 
 }
+
 #TheLineInDevProjects{
     position: relative;
     top: 350px;
@@ -319,14 +335,42 @@ body{
     overflow-x: scroll;
     white-space: nowrap;
 }
-.developmentPageContainer h1{
+.developmentPageContainer  h1{
     position: absolute;
-    color: #000;
     font-size: 50px;
     padding: 100px 190px;
 
 
 }
+/*To implement Dark Mood*/
+.dark ,.dark body{
+    background-color:#121212;
+    color: white;
+}
+.dark .nav-links a{
+    color: white;
+}
+.dark  .developmentPageContainer{
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a);
+    height: 940px;
+    width: 100%;
+
+}
+.dark .footer{
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F09819, #FF512F);
+
+}
+.dark input[type="submit"]{
+    background: grey;
+}
+.dark .switch{
+    background: linear-gradient(to right, #F09819, #FF512F);
+}
+
 
 /*_______________________________________ DEVELOPMENT PAGE END _______________________________________*/
 /* WORKED ON THE ABOVE : YARA */

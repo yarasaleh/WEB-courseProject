@@ -38,7 +38,10 @@
         </nav>
         <header class = "developmentPageHeader">
             <img id = "DevBackLogo" src="images/developmentPage/DevBackLogo.png" width="380px" height="380px">
-            <img id = "DevFrontLogo" src="images/developmentPage/DevFrontLogo.png" width="290px" height="340px">
+            <img id = "DevFrontLogo" src="images/developmentPage/DevFrontLogo.png" width="230px" height="280px">
+            <div class="switch">
+                <span class="inner-switch">Dark Mode</span>
+            </div>
             <p>Here where developers share code, tricks and interesting facts about programming or even designing UI/UX for websites. <br>
                Also you can learn about new concepts in programming and share experience knowledge <br>
                in your field whether in Web-Development, AI, Data science or Security.</p>
@@ -89,6 +92,71 @@
 
         </section>
         </section>
+        <section class = "ScrollAnimationSecton3">
+        <section class="developmentPageContainer">
+            <h1>Topics You Might Be Interested In</h1>
+            <hr id = "TheLineInDevProjects" width = "1670px">
+            <div class ="developmentPageTopics">
+                <article id="DevTopic">
+                    <div id ="DevPageCircleInTopics"></div>
+                    <a href="https://www.youtube.com/watch?v=8yWUaqEcXr4&list=PLSu0WAXAGryXH1Zn-ZBe4jqA608VnAwXV&index=5&t=323s" target="_blank"><h2>Solving a JavaScript crackme</h2></a>
+                    <p id = "author">By: LiveOverflow</p>
+                    <p id = "ProgrammingLang">JavaScript</p>
+                </article>
+                <article id="DevTopic">
+                    <div id ="DevPageCircleInTopics"></div>
+                    <a href="https://css-tricks.com/video-screencasts/171-movable-stacked-card-row-in-css/" target="_blank"><h2>Movable Stacked Card Row</h2></a>
+                    <p id = "author">By: Chris Coyier</p>
+                    <p id = "ProgrammingLang">SCSS</p>
+                </article>
+                <article id="DevTopic">
+                    <div id ="DevPageCircleInTopics"></div>
+                     <a href="https://distill.pub/2017/momentum/" target="_blank"><h2>Why Momentum Really Works</h2></a>
+                    <p id = "author">By: Gabriel Goh</p>
+                    <p id = "ProgrammingLang">AI</p>
+                </article>
+                <article id="DevTopic">
+                    <div id ="DevPageCircleInTopics"></div>
+                    <a href="https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel" target="_blank"><h2>how to generate your<br>data in parallel</h2></a>
+                    <p id = "author">By: Afshine & Shervine Amidi</p>
+                    <p id = "ProgrammingLang">PyTorch</p>
+                </article>
+                <article id="DevTopic">
+                    <div id ="DevPageCircleInTopics"></div>
+                    <a href="http://docopt.org/" target="_blank"><h2>Command-line interface<br>description language</h2></a>
+                    <p id = "author">By: ocopt.org</p>
+                    <p id = "ProgrammingLang">Python,PHP,Tcl..</p>
+                </article>
+                <article id="DevTopic">
+                    <div id ="DevPageCircleInTopics"></div>
+                    <a href="https://www.youtube.com/watch?v=SstD1O4_kwc" target="_blank"><h2>Blind Buffer Overflow exploitation<br>to leak secret data</h2></a>
+                    <p id = "author">By: LiveOverflow</p>
+                    <p id = "ProgrammingLang">Python</p>
+                </article>
+            </div>
+
+        </section>
+        </section>
+        <!-- the jQuery library to use its functionalities for custom script to work (in js file) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" >
+        //For Dark Mood
+        $( ".inner-switch" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+              $( "body" ).removeClass( "dark" );
+              $( ".inner-switch" ).text( "Dark Mode" );
+              document.getElementById('logoImage').src='images/logo.png';
+              document.getElementById('DevBackLogo').src='images/developmentPage/DevBackLogo.png';
+            } else {
+              $( "body" ).addClass( "dark" );
+              $( ".inner-switch" ).text( "Light Mode" );
+              document.getElementById('logoImage').src='images/logoForDarkMode.png';
+              document.getElementById('DevBackLogo').src='images/developmentPage/DevBackLogoForDarkMode.png';
+
+
+            }
+        });
+        </script>
 
 
 
