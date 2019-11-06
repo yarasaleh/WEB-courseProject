@@ -40,7 +40,7 @@
             <img id = "DevBackLogo" src="images/developmentPage/DevBackLogo.png" width="380px" height="380px">
             <img id = "DevFrontLogo" src="images/developmentPage/DevFrontLogo.png" width="230px" height="280px">
             <div class="switch">
-                <span class="inner-switch">Dark Mode</span>
+                <img id="ModeIcon" title="Change The Mode" src="images/developmentPage/DarkModeImg.svg" alt="Change The Mode">
             </div>
             <p>Here where developers share code, tricks and interesting facts about programming or even designing UI/UX for websites. <br>
                Also you can learn about new concepts in programming and share experience knowledge <br>
@@ -141,15 +141,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script type="text/javascript" >
         //For Dark Mood
-        $( ".inner-switch" ).on("click", function() {
+        $( "#ModeIcon" ).on("click", function() {
             if( $( "body" ).hasClass( "dark" )) {
               $( "body" ).removeClass( "dark" );
-              $( ".inner-switch" ).text( "Dark Mode" );
+              $( "#ModeIcon" ).attr( "src" ,"images/developmentPage/DarkModeImg.svg");
+              //document.getElementById('ModeIcon').src='images/developmentPage/DarkModeImg.svg';
               document.getElementById('logoImage').src='images/logo.png';
               document.getElementById('DevBackLogo').src='images/developmentPage/DevBackLogo.png';
             } else {
               $( "body" ).addClass( "dark" );
-              $( ".inner-switch" ).text( "Light Mode" );
+              $( "#ModeIcon" ).attr( "src" ,"images/developmentPage/LightModeImg.svg");
+              //document.getElementById('ModeIcon').src='images/developmentPage/LightModeImg.svg';
               document.getElementById('logoImage').src='images/logoForDarkMode.png';
               document.getElementById('DevBackLogo').src='images/developmentPage/DevBackLogoForDarkMode.png';
 
