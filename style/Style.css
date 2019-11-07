@@ -76,8 +76,8 @@ body{
     position: relative; /*So the scroll works right*/
     margin-top: 900px;
     width: 100%;
-    /* TODO: try using overflow to make this div below typeeffect section */
 }
+
 .TheRightSide{
     float:right;
     margin-top: 320px;
@@ -108,13 +108,11 @@ body{
     height: 490px;
 }
 .TheLeftSide img{
-    /*TODO : make the pictures not go down when rezise the browser*/
     margin-top: 50px;
     margin-left: 50px;
     margin-right: 50px;
     opacity:0.6;
     filter:alpha(opacity=40);
-    border-radius: 5%;
     transition: 0.8s;
 }
 .TheLeftSide img:hover{
@@ -126,9 +124,14 @@ body{
     font-size: 15px;
     font-weight: 900;
     margin-top: 0px;
+    text-decoration: none;
 }
 .TheTitleOfLatestProjects{
     display: flex;
+}
+.TheTitleOfLatestProjects a {
+    text-decoration: none;
+    color: #000000;
 }
 #txt1{
     margin-left: 50px;
@@ -139,7 +142,10 @@ body{
 #txt3{
     margin-left: 155px;
 }
-
+#TopViewBackground{
+    width: 100%;
+    object-fit: cover;
+}
 @media screen and (max-width:1300px) {
     .nav-links{
         position: absolute;
