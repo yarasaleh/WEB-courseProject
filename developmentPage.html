@@ -42,7 +42,7 @@
             <div class="switch">
                 <img id="ModeIcon" title="Change The Mode" src="images/developmentPage/DarkModeImg.svg" alt="Change The Mode">
             </div>
-            <p>Here where developers share code, tricks and interesting facts about programming or even designing UI/UX for websites. <br>
+            <p>Here where developers share code, tricks and interesting facts about programming . <br>
                Also you can learn about new concepts in programming and share experience knowledge <br>
                in your field whether in Web-Development, AI, Data science or Security.</p>
         </header>
@@ -50,6 +50,7 @@
         <section class = "ScrollAnimationSecton2">
         <section class="developmentPageContainer">
             <h1>Snippets </h1>
+            <img class = "scrllRightIcon" src="images/developmentPage/scrollRightLightMode.png" alt="Scroll Right">
             <hr id = "TheLineInDevProjects" width = "1670px">
             <div class ="developmentPageTopics">
                 <article id="DevTopic">
@@ -95,6 +96,7 @@
         <section class = "ScrollAnimationSecton3">
         <section class="developmentPageContainer">
             <h1>Topics You Might Be Interested In</h1>
+            <img class = "scrllRightIcon"src="images/developmentPage/scrollRightLightMode.png" alt="Scroll Right">
             <hr id = "TheLineInDevProjects" width = "1670px">
             <div class ="developmentPageTopics">
                 <article id="DevTopic">
@@ -148,12 +150,14 @@
               //document.getElementById('ModeIcon').src='images/developmentPage/DarkModeImg.svg';
               document.getElementById('logoImage').src='images/logo.png';
               document.getElementById('DevBackLogo').src='images/developmentPage/DevBackLogo.png';
+              document.getElementsByClassName('scrllRightIcon').src='images/developmentPage/scrollRightLightMode.png';
             } else {
               $( "body" ).addClass( "dark" );
               $( "#ModeIcon" ).attr( "src" ,"images/developmentPage/LightModeImg.svg");
               //document.getElementById('ModeIcon').src='images/developmentPage/LightModeImg.svg';
               document.getElementById('logoImage').src='images/logoForDarkMode.png';
               document.getElementById('DevBackLogo').src='images/developmentPage/DevBackLogoForDarkMode.png';
+              document.getElementsByClassName('scrllRightIcon').src='images/developmentPage/scrollRightDarkMode.png';
 
 
             }
