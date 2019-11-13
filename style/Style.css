@@ -493,10 +493,10 @@ display:block;
  }
  #text1-leftSide-{
    padding-top: 5%;
-   padding-left: 27%;
+   padding-left: 20%;
    font-family:sans-serif;
    font-weight:900;
-   font-size: 42px;
+   font-size: 37px;
  }
 
  .formCP{
@@ -539,7 +539,7 @@ height:50%;
 
     #label-input1- , #label-input2- , #label-input3-{
    font-family:inherit !important;
-   font-size:29px;
+   font-size:25px;
    color:#878c96;
 }
 
@@ -585,21 +585,21 @@ outline: none;           /* here we use outline to delete a line that is drow ar
        .contactPage{
       display: flex;
        }
-       #text1-rightSide-{
+       #text-rightSide-{
          padding-left:33%;
-         padding-top: 8%;
+         padding-top: 40%;
          font-size: 48px;
          font-family:Courier !important;
          color: white;
          font-weight: 600;
          font-style: italic;
        }
-       #text2-rightSide-{
+    /*   #text2-rightSide-{
          color:white;
          font-size: 31px;
          padding-left: 35%;
          font-family: Courier !important;
-       }
+       }*/
        .icons-rightSide-{
          padding-left: 35%;
        }
@@ -610,6 +610,94 @@ outline: none;           /* here we use outline to delete a line that is drow ar
 
        }
 /*_______________________________________ CONTACT PAGE END _______________________________________*/
+/*_______________________________________ architecture PAGE BEGIN_________________________________*/
+.architecture-logo-{
+left:160px;
+margin-top: 150px;
+margin-bottom: 100px;
+margin-left: 20%;
+position:relative;
+}
+.headerArch{
+margin-right: 50px;
+position:absloute;
+}
 
+.arch1{
+  height:200%;
+  width:50%;
+  padding-top:50px;
+  padding-left:200px;
+  padding-bottom: 50px;
+  margin-top:150px;
+  background:#7C1111;
+  color:white;
+}
+
+.imgarch1{
+
+position:relative;
+bottom:350px;
+left:48%;
+
+
+}
+
+.arch2{
+height:80%;
+width:47%;
+padding-top:80px;
+padding-left:30%;
+padding-bottom:90px;
+margin-left: 450px;
+margin-top: -100px;
+background:#7C1111;
+color:white;
+}
+.imgarch2{
+position:absolute;
+margin-right:10px;
+left:170px;
+top:1250px;
+}
+
+
+.arch3{
+height: 500px;
+width:50%;
+padding-top:70px;
+padding-left:200px;
+background:#7C1111;
+color:white;
+margin-top:200px;
+}
+
+.imgarch3{
+position:relative;
+left:70%;
+bottom:365px;
+
+}
+
+.arch4{
+height:400px;
+width:45%;
+background:#7C1111;
+color:white;
+padding-left:30%;
+padding-top: 50px;
+margin-left:450px;
+margin-top: 200px;
+margin-bottom: 100px;
+
+}
+.imgarch4{
+position: absolute;
+top:2670px;
+right:1090px;
+
+}
+
+/*_______________________________________ Architecture PAGE END _________________________________*/
 
 /* WORKED ON THE ABOVE : RAGHAD */
