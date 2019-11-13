@@ -10,5 +10,6 @@ This is a project for (IT271) Web Technologies Course.
 * [Dev Ed YouTube Channel](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q)
 * [developerdrive Website](https://www.developerdrive.com/css-dark-mode/)
 * [Ouch.com](https://icons8.com/ouch)
+* [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
 
