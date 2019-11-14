@@ -2,8 +2,8 @@ body{
     background-color: #F3F4FF;
     padding: 0px;
     margin: 0px;
-    scroll-snap-type : y proximity;  /* I didn't use mandatory cuz It caused the user to be able to scroll beyond the footer!!*/
-    overflow-y: scroll;
+    scroll-snap-type: y mandatory;  /* I didn't use mandatory cuz It caused the user to be able to scroll beyond the footer!!*/
+    overflow: scroll;
     font-family: courier-std, monospace;
     font-style: normal;
 }
@@ -11,6 +11,11 @@ body{
     display: flex; /*flex makes them next to each other not one below the other*/
     justify-content: space-around;
     align-items: center; /*makes then lined centered*/
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    background: rgb(243, 244, 255,0.9); /*The background for menu bar when dark mode I used RGB to add the las arg which is for opacity 0.9*/
 }
 .nav-links{
     font-weight: 400;
@@ -31,12 +36,15 @@ body{
 /*_______________________________________ HOME PAGE BEGIN _______________________________________*/
 .ScrollAnimationSecton1{
     scroll-snap-align : start;
+    scroll-snap-stop: normal;
 }
 .ScrollAnimationSecton2{
     scroll-snap-align : start;
+    scroll-snap-stop: normal;
 }
 .ScrollAnimationSecton3{
     scroll-snap-align : end;
+    scroll-snap-stop: normal;
 }
 .HomePage{
     display: flex;
@@ -372,6 +380,9 @@ body{
 }
 .dark .nav-links a{
     color: white;
+}
+.dark .MenuBar{
+    background: rgb(18,18,18,0.7); /*The background for menu bar when dark mode I used RGB to add the las arg which is for opacity 0.7*/
 }
 .dark  .developmentPageContainer{
     background: #41295a;  /* fallback for old browsers */
