@@ -253,7 +253,7 @@ body{
 #DevFrontLogo{
     position: absolute;
     top: 390px;
-    left: 720px;
+    left: 780px;
     transition: 1s;
 }
 #DevFrontLogo:hover{
@@ -264,7 +264,7 @@ body{
 #DevBackLogo{
     position: relative;
     top:190px;
-    left: 650px;
+    left: 700px;
 }
 .developmentPageHeader > p{
     position: relative;
@@ -278,10 +278,11 @@ body{
     background: #4e54c8;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
     background: linear-gradient(to right, #8f94fb, #4e54c8);
-    height: 800px;
+    height: 700px;
        /*using width 100% cause the ability to scrll a liitle bit in x axis on the whole page */
     position: relative;
-    padding: 20px;
+    /*padding: 20px; Use it to connect the sections and merge them*/ 
+    margin-top: 100px;
 
 }
 
