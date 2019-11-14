@@ -183,6 +183,9 @@ body{
     align-items: center; /* y axis */
     justify-content: center; /* x axis */
 }
+video{
+    margin-top: 60px;
+}
 .graphicDesignPageHeader img{
     padding: 0 100px;
 }
@@ -281,7 +284,7 @@ body{
     height: 700px;
        /*using width 100% cause the ability to scrll a liitle bit in x axis on the whole page */
     position: relative;
-    /*padding: 20px; Use it to connect the sections and merge them*/ 
+    /*padding: 20px; Use it to connect the sections and merge them*/
     margin-top: 100px;
 
 }
