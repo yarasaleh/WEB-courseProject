@@ -8,7 +8,7 @@ body{
 .MenuBar{
     display: flex; /*flex makes them next to each other not one below the other*/
     justify-content: space-around;
-    align-items: center; /*makes then lined centered*/
+    /*align-items: center;*/ /*makes then lined centered*/
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -26,7 +26,7 @@ body{
 .nav-links a{
     color: #000000;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 .nav-links li{
     list-style: none;
@@ -44,7 +44,7 @@ body{
     justify-content: center; /*in order to make it works we used height property*/
     padding: 0 40px; /* 0 = bottom and top , 3 = right and left*/
     margin-top: 400px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 #TxtBeforeTyper , #TxtAfterTyper{
     font-family: 'PT Mono', monospace !important; /* So the page font doesn't apply*/
@@ -59,9 +59,8 @@ body{
 }
 .TopView{
     position: absolute;
-    float: left;
-    left: 0;
     margin-top: 15px;
+    margin-bottom: 15px;
 } /* Source for the solution is : https://stackoverflow.com/questions/13933051/stick-image-to-right-side-of-the-page */
 /* Cursor , '>' means inside of it which .txt was a class in js script*/
 .txt-type > .txt {
@@ -69,7 +68,7 @@ body{
 }
 .TheLastestProjects{
     position: relative; /*So the scroll works right*/
-    margin-top: 900px;
+    margin-top: 1100px;
     width: 100%;
 }
 
@@ -78,7 +77,6 @@ body{
     margin-top: 320px;
     padding-right: 0px;
     padding-left: 0px;
-    width: 40%;
     display: flex;
     flex-direction: column;
 }
@@ -98,7 +96,6 @@ body{
     margin-top: 100px;
     background-color: #BDD3FF;
     float: left;
-    width: 60%;
     width:1005px;
     height: 490px;
 }
@@ -107,12 +104,10 @@ body{
     margin-left: 50px;
     margin-right: 50px;
     opacity:0.6;
-    filter:alpha(opacity=40);
     transition: 0.8s;
 }
 .TheLeftSide img:hover{
     opacity:1.0;
-    filter:alpha(opacity=100);
     transition: 0.8s;
 }
 .TheLeftSide p{
@@ -140,6 +135,7 @@ body{
 #TopViewBackground{
     width: 100%;
     object-fit: cover;
+    margin-top: 40px;
 }
 @media screen and (max-width:1300px) {
     .nav-links{
@@ -150,7 +146,7 @@ body{
         top: 11vh;  /*distance between logo and nav links*/
     }
 }
-@media screen and (min-width:1200px){
+/*@media screen and (min-width:1200px){
     #TxtBeforeTyper{
         font-size: 50px;
     }
@@ -173,7 +169,7 @@ body{
     #TxtAfterTyper{
         font-size: 10px;
     }
-}
+}*/
 /*_______________________________________ HOME PAGE END _______________________________________*/
 /*_______________________________________ GRAPHIC DESIGN PAGE BEGIN _______________________________________*/
 /* Thanks To Traversy Media YouTube vid called (Animate On Scroll Webpage | AOS Library) which helped me design this page*/
