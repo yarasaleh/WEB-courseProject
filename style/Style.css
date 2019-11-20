@@ -205,7 +205,6 @@ video{
 .graphicDesignPageContainer{
     max-width: 1100px; /* To make it responsive*/
     margin: auto; /* To push it to the center*/
-    overflow: auto; /* it adds scrollbars only when necessary   [[ NOT NECESSARY REMOVE IT ]]*/
     padding: 0 30px; /* bottom & top = 0  right & left = 30*/
 }
 .graphicDesignArticleCard h1{
@@ -214,12 +213,12 @@ video{
     font-size: 25px;
     margin-bottom: 5px;
 }
-#ArticleFields {
+.ArticleFields {
     color: #4E4D4D;
     font-size: 13px;
     margin-top: 60px;
 }
-#ArticleDescrip{
+.ArticleDescrip{
     font-size: 13px;
     margin: 0px;
 }
