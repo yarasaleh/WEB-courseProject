@@ -404,7 +404,7 @@ body{
    width: 100%;
    height:230px;
    background-color: #BDD3FF;
-   margin-top: 1900px;
+   margin-top: 800px; /*it was 1900px*/
    margin-bottom: 0;
    display:flex;} /*here we put flex to become contents footer next to each other*/
 
