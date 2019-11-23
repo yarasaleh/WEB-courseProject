@@ -430,7 +430,7 @@ padding-left:13px;
 }
 .footer img{
 padding-right:8px;
-opacity:0.2;  /*to reduce img clarity*/
+opacity:0.6;  /*to reduce img clarity*/
 }
 
 @media(max-width:1600px) and (min-width:480px){
@@ -622,6 +622,12 @@ position:absloute;
   color:white;
 }
 
+.arch1 a {
+    text-decoration: none;
+    color: white;
+
+}
+
 .imgarch1{
 
 position:relative;
@@ -642,6 +648,12 @@ margin-top: -100px;
 background:#7C1111;
 color:white;
 }
+
+.arch2 a {
+    text-decoration: none;
+    color: white;
+
+}
 .imgarch2{
 position:absolute;
 margin-right:10px;
@@ -658,6 +670,12 @@ padding-left:200px;
 background:#7C1111;
 color:white;
 margin-top:200px;
+}
+
+.arch3 a {
+    text-decoration: none;
+    color: white;
+
 }
 
 .imgarch3{
@@ -677,6 +695,11 @@ padding-top: 50px;
 margin-left:450px;
 margin-top: 200px;
 margin-bottom: 400px;
+
+}
+.arch4 a {
+    text-decoration: none;
+    color: white;
 
 }
 .imgarch4{
