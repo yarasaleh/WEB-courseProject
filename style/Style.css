@@ -8,7 +8,6 @@ body{
 .MenuBar{
     display: flex; /*flex makes them next to each other not one below the other*/
     justify-content: space-around;
-    /*align-items: center;*/ /*makes then lined centered*/
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -147,30 +146,7 @@ body{
         top: 11vh;  /*distance between logo and nav links*/
     }
 }
-/*@media screen and (min-width:1200px){
-    #TxtBeforeTyper{
-        font-size: 50px;
-    }
-    .nav-links a{
-        font-size: 14px;
-    }
-}
-@media screen and (max-width:800px){
-    .TypeContainer{
-        padding: 0.1rem;
-    }
-    #TxtBeforeTyper{
-        font-size: 30px;
-    }
-}
-@media screen and (max-width:500px){
-    #TxtBeforeTyper{
-        font-size: 20px;
-    }
-    #TxtAfterTyper{
-        font-size: 10px;
-    }
-}*/
+
 /*_______________________________________ HOME PAGE END _______________________________________*/
 /*_______________________________________ GRAPHIC DESIGN PAGE BEGIN _______________________________________*/
 /* Thanks To Traversy Media YouTube vid called (Animate On Scroll Webpage | AOS Library) which helped me design this page*/
@@ -283,7 +259,7 @@ video{
     margin-bottom: 400px;
 }
 
-#TheLineInDevProjects{
+.TheLineInDevProjects{
     position: relative;
     top: 350px;
     width: auto;
@@ -291,7 +267,7 @@ video{
     border-width: 0.5px;
 
 }
-#DevTopic{
+.DevTopic{
     padding: 1.3rem;
     background: transparent;
     display: flex;
@@ -301,20 +277,20 @@ video{
     margin-right: 50px;
 
 }
-#DevPageCircleInTopics{
+.DevPageCircleInTopics{
     position: relative; /*makes the circle above the line*/
     width: 17px;
     height: 17px;
     background-color: #7C1111;
     border-radius: 100%;
 }
-#author{
+.author{
     margin-top: 0;
 }
-#DevTopic  h2{
+.DevTopic  h2{
     margin-bottom: 4px;
 }
-#DevTopic a{
+.DevTopic a{
     text-decoration: none;
     color: inherit;
 }
