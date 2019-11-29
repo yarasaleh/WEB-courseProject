@@ -446,7 +446,7 @@ input[type="submit"]:hover{
 
 /*_______________________________________ CONTACT PAGE BEGIN _______________________________________*/
 
-
+       /*in this page i took the help from w3svhool*/
  .contactPage-leftSide-{
 background-color:#D6DAEB;
 width:60%;
@@ -471,7 +471,7 @@ height:50%;
 
 }
 
-  .formCP .input1 , .input2{
+  .formCP .input1{
     width:400px;
     height:35px;
     color:black;
@@ -483,13 +483,25 @@ height:50%;
     color: #3e4042;
    }
 
+   .formCP  .input2{
+     width:400px;
+     height:35px;
+     color:black;
+     font-size:25px;
+      padding-top:45px;
+     border:none;
+     background: #D6DAEB;
+     outline: none;               /* here we use outline to delete a line that is drow around the element */
+     color: #3e4042;
+    }
+
   .formCP  #label-input1-{
      position: absolute;
       bottom:444px;
     }
    .formCP #label-input2-{
     position:absolute;
-      bottom:285px;
+      bottom:280px ;
       }
     #label-input1- , #label-input2-{
       left:0%;
@@ -498,6 +510,7 @@ height:50%;
        pointer-events: none;    /*again also,points-events here helps to i can write over name*/
       border-bottom: 3px solid #30333b;
         }
+
 
     /*in line 35-44 and line 55-60 "i do the line of input from --> source:https://www.youtube.com/watch?v=IxRJ8vplzAo"*/
 
@@ -568,7 +581,7 @@ outline: none;           /* here we use outline to delete a line that is drow ar
          padding-left: 35%;
        }
 
-       #socalmedia-icons{
+       .socalmedia-icons{
        height: 5%;
        width:5%;
 
@@ -584,7 +597,8 @@ position:relative;
 }
 .headerArch{
 margin-right: 50px;
-position:absloute;
+/*margin-top: 140px;*/
+/*position:absolute;*/
 }
 
 .arch1{
@@ -657,7 +671,7 @@ margin-top:200px;
 .imgarch3{
 position:relative;
 left:70%;
-bottom:365px;
+bottom:350px;
 
 }
 
@@ -680,8 +694,8 @@ margin-bottom: 400px;
 }
 .imgarch4{
 position: absolute;
-top:2670px;
-right:1090px;
+top:2640px;
+right:1400px;
 
 }
 
