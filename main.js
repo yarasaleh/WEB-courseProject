@@ -7,6 +7,7 @@ class TypeWriter {
     * txtElement : an HTML element that has the text to type which is in our case span element
     * words : ARRAY ,taken from txtElement array
     * wait : default value is 3000 ms
+    * txt : the letters typing
     * }
     * Varibles Description {
     * wordIndex : the index of every word in words array
@@ -72,20 +73,20 @@ class TypeWriter {
 * Syntax : element.addEventListener(event , function , useCapture);
 **/
 // Init On DOM Load
-document.addEventListener('DOMContentLoaded',init);
+document.addEventListener("DOMContentLoaded",init);
 
 
 function init(){
     /**
-    * @init()
-    * function Description{
-    * Init where we need to get the elements(span and its attributes)
-    * txtElement : used to grab the element itself by its class name which is txt-type
-    * }
+     * @init()
+     * function Description{
+     * Init where we need to get the elements(span and its attributes)
+     * txtElement : used to grab the element itself by its class name which is txt-type
+     * }
     **/
-    const txtElement = document.querySelector('.txt-type');
-    const wait = txtElement.getAttribute('data-wait');
-    const words = JSON.parse(txtElement.getAttribute('data-words'));
+    const txtElement = document.querySelector(".txt-type");
+    const wait = txtElement.getAttribute("data-wait");
+    const words = JSON.parse(txtElement.getAttribute("data-words"));
     // we need to parse the array otherwise it's gonna look at it as string
     // Init TypeWriter object
     new TypeWriter(txtElement , words , wait);
@@ -95,12 +96,10 @@ function init(){
 
 
 // Where I Initialized AOS  FOR GRAPHIC DESIGN PAGE -- Scrolling Animation --
-// I did change the default value of duration to take longer to appear and I did it here cuz all cards gonna have the same value
+// I did change the default value of duration to take longer to
+// appear and I did it here cuz all cards gonna have the same value
 // THE WAYS TO USE THIS SMALL LIBRARY IN ((NPM)) PACKAGE
 AOS.init({ duration: 1000});
-
-
-
 
 
 // WORKED ON THE ABOVE : YARA
