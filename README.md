@@ -1,6 +1,12 @@
 # WEB-courseProject
 This is a project for (IT271) Web Technologies Course.
 
+![Alt Text](https://github.com/yaraxxx/WEB-courseProject/blob/master/images/Home.gif)
+
+![Alt Text](https://github.com/yaraxxx/WEB-courseProject/blob/master/images/graphic_design.gif)
+
+![Alt Text](https://github.com/yaraxxx/WEB-courseProject/blob/master/images/Dev.gif)
+
 ## Acknowledgments
 * [Milanote Website](https://milanote.com/) used to organise and prepare our ideas for the project.
 * Behance Great Community’s [Projects](https://www.behance.net/collection/173835183/GC)
